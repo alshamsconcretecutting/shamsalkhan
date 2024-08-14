@@ -71,12 +71,59 @@
 
   
 
-  <!-- =======================================================
-    Theme Name: Reveal
-    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  <style>
+	      .call-now-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .call-now-btn:hover {
+            background: #0056b3;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            transform: scale(1.05);
+        }
+
+        .call-now-btn:active {
+            background: #004080;
+            transform: scale(0.95);
+        }
+
+        .call-now-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        /* Add a pulse animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .call-now-btn {
+            animation: pulse 1.5s infinite;
+        }
+  </style>
 </head>
 
 <body id="body">
@@ -152,6 +199,13 @@
 </p>
            
 </div>
+		    <div class="container text-center my-5">
+        <a href="tel:+971557420576" class="call-now-btn">
+            <i class="bi bi-telephone-fill"></i>
+            Call Now
+        </a>
+    </div>
+
         </div>
 
       </div>
